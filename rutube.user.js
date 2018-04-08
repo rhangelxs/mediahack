@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MediaHack
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.1
 // @description  try to take over the world!
 // @author       Alexey Klimov
 // @include      *//rutube.ru/*
@@ -47,7 +47,7 @@
         new Fingerprint2().get(function(result, components) {
             //console.log(result) // a hash, representing your device fingerprint
             //console.log(components) // an array of FP components
-            firebase.database().ref('users/' + result).on('value', function(snapshot) {
+            firebase.database().ref('users/' + result).once('value', function(snapshot) {
                 username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
                 email = (snapshot.val() && snapshot.val().email) || 'Anonymous';
 
