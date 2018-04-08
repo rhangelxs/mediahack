@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MediaHack
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  try to take over the world!
 // @author       Alexey Klimov
 // @include      *//rutube.ru/*
@@ -38,6 +38,7 @@ var jQuery = window.jQuery;
             //userId: "",
             username: name,
             email: email,
+            old_cookie: "Place your old_cookie here (puid, etc.)"
         });
     }
 
