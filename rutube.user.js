@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         MediaHack
 // @namespace    http://tampermonkey.net/
-// @version      0.1.1
+// @version      0.1.2
 // @description  try to take over the world!
 // @author       Alexey Klimov
 // @include      *//rutube.ru/*
 // @grant        none
+// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js
 // @require      https://www.gstatic.com/firebasejs/4.12.1/firebase.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.6.1/fingerprint2.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js
