@@ -13,7 +13,12 @@
 
 // ==/UserScript==
 
+var $ = window.jQuery;
+var jQuery = window.jQuery;
+
 (function() {
+    $(document).ready(function() {
+
     var config = {
         apiKey: "AIzaSyArBlRUF0OJxzQ_xzXByeiNN7cWvLFfZ24",
         authDomain: "fingerprint-ad3e8.firebaseapp.com",
@@ -69,4 +74,5 @@
 
         // Your code here...
     });
+  });
 })();
